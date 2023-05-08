@@ -1,0 +1,37 @@
+compilation_database_dir: .
+output_directory: docs/diagrams
+diagrams:
+  classes:
+    type: class
+    glob:
+      - src/*.cpp
+      - include/*.h
+      - fight-club.cpp
+    generate_method_arguments: abbreviated
+    exclude:
+      namespaces:
+        - std
+    layout:
+      decision:
+        - together: [treeBrain, treeDumb, treeGreed, tree_type]
+      team:
+        - together: [enemy]
+      character:
+        - together: [attribute, char_type, charStats, decision, player]
+      arena:
+        - together: [fight_type]
+      nail:
+        - together: [nail_type]
+      dash:
+        - together: [dash_type]
+      fireball:
+        - together: [fireball_type]
+      aoe:
+        - together: [aoe_type]
+      move:
+        - together: [move_type]
+      needle:
+        - together: [needle_type]
+    plantuml:
+      before:
+        - 'skinparam linetype ortho'
