@@ -1,0 +1,6 @@
+[submodule "VERTS/myfind"]
+	path = VERTS/myfind
+	url = https://github.com/fhtw-beni-team-projects/verts-myfind.git
+[submodule "VERTS/twmailer"]
+	path = VERTS/twmailer
+	url = https://github.com/fhtw-beni-team-projects/verts-twmailer.git
